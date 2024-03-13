@@ -1,10 +1,18 @@
-import CardProject from "../components/CardProject";
 import React from "react";
+import CardProject from "../components/CardProject";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const page = () => {
     return(
-        <div>
+        <main className="w-full h-screen">
+            <Navbar />
+            <div className="w-full h-full bg-cover bg-center" style={{backgroundImage: "url(/bg.jpg)", opacity: 0.6}}>
             <CardProject />
-        </div>
+            </div>
+            <Footer />
+        </main>
     )
 }
+
+export default page
