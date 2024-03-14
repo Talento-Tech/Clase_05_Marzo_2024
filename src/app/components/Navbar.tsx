@@ -8,15 +8,6 @@ const Navbar = () => {
 
   return (
     <>
-      <div>
-        {/* <Image
-          src = "/favicon.ico"
-          alt = "logo"
-          width = {5}
-          height = {5}
-          className = "w-full h-full"
-        /> */}
-      </div>
       <header className="text-gray-600 body-font">
         <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
           <a 
@@ -37,20 +28,21 @@ const Navbar = () => {
           </a>
           <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
             <Link href="/aboutMe" className="text-lg mr-5 hover:text-gray-900">
-              About me
-            </Link>
-            <Link
-              href="/contactMe"
-              className="text-lg mr-5 hover:text-gray-900"
-            >
-              Contact me
+              Sobre mi
             </Link>
             <Link
               href="/projects"
               className="text-lg mr-5 hover:text-gray-900"
             >
-              Projects
+              Proyectos
             </Link>
+            <Link
+              href="/contactMe"
+              className="text-lg mr-5 hover:text-gray-900"
+            >
+              Contáctame
+            </Link>
+            
           </nav>
         </div>
       </header>
